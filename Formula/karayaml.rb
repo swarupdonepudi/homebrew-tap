@@ -1,5 +1,5 @@
 class Karayaml < Formula
-  version "v0.0.1"
+  version "v0.0.2"
   desc "YAML‑powered shortcut launcher for Karabiner‑Elements on macOS"
   homepage "https://github.com/swarupdonepudi/karayaml"
   os_arch = `arch`
@@ -8,10 +8,8 @@ class Karayaml < Formula
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-    binary_name="karayaml-#{version}-#{arch}"
+    binary_name="karayaml-darwin-#{arch}"
     bin.install "#{binary_name}"
     mv bin/"#{binary_name}", bin/"karayaml"
   end
 end
-
-
