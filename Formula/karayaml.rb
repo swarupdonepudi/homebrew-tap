@@ -1,5 +1,5 @@
 class Karayaml < Formula
-  version "v0.0.3"
+  version "v0.0.4"
   desc "YAML‑powered shortcut launcher for Karabiner‑Elements on macOS"
   homepage "https://github.com/swarupdonepudi/karayaml"
   os_arch = `arch`
