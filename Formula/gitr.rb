@@ -5,20 +5,20 @@
 class Gitr < Formula
   desc "gitr: git rapid - save time by opening git repos on web right from the command line"
   homepage "https://github.com/swarupdonepudi/gitr"
-  version "1.0.9"
+  version "1.0.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.9/gitr-darwin-amd64"
-      sha256 "620218d919fe7536d12ab9ce529452619953cf09659bc72968758b716a19d4b7"
+      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.11/gitr_1.0.11_darwin_amd64.tar.gz"
+      sha256 "4b73a41969d5c3d014081260b56d9191966bfb01cd8d4a6381154b5f03fe452f"
 
       def install
         bin.install "gitr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.9/gitr-darwin-arm64"
-      sha256 "77ba03b7fc7fc59ac6bf2b9eb30ee1e8758a189e80e5f01bf79d450c97cf4034"
+      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.11/gitr_1.0.11_darwin_arm64.tar.gz"
+      sha256 "551b3cef696f19b9ea1e3dd87b711acd00ff30a80d6c8f2bd3070312609927a5"
 
       def install
         bin.install "gitr"
@@ -28,15 +28,15 @@ class Gitr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.9/gitr-linux-amd64"
-      sha256 "a4b826616c1fe40b80e1f079355e9ffdddc4d8f06cd525533d46020d5f999022"
+      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.11/gitr_1.0.11_linux_amd64.tar.gz"
+      sha256 "c99d30742ffc5d27ea70f141ceac434051a253c8fb73f8a5abec5e9b32f094a9"
       def install
         bin.install "gitr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.9/gitr-linux-arm64"
-      sha256 "0b56880cf4af266ce5da52e0c5ff7e38beace49375bbfa2c1f44981480dbf5a7"
+      url "https://github.com/swarupdonepudi/gitr/releases/download/v1.0.11/gitr_1.0.11_linux_arm64.tar.gz"
+      sha256 "001c19a5afe864774651d8157a0add201956111bcf7277d204648f628f367621"
       def install
         bin.install "gitr"
       end
