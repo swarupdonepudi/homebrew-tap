@@ -3,7 +3,7 @@ cask "gitr" do
   name "gitr"
   desc "gitr: git rapid - save time by opening git repos on web right from the command line"
   homepage "https://github.com/swarupdonepudi/gitr"
-  version "1.0.12"
+  version "1.0.13"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "gitr" do
   on_macos do
     on_intel do
       url "https://github.com/swarupdonepudi/gitr/releases/download/v#{version}/gitr_#{version}_darwin_amd64.tar.gz"
-      sha256 "dcccb32dda8277081a201920847b5ef1dc541afaa0550d3c8b4f6024cf533987"
+      sha256 "709779bbe7834b4abde21fc8cbfb25b3749c0afbc64646c70f0b1881bb1aa95f"
     end
     on_arm do
       url "https://github.com/swarupdonepudi/gitr/releases/download/v#{version}/gitr_#{version}_darwin_arm64.tar.gz"
-      sha256 "b294c70e019dc4fb556be10e199f48d821d630313ce7479ef7179eab4af3d069"
+      sha256 "42c7e25643364ad2fd9e640e52741b9868b11d45f4c5173fe79baa57efc86c00"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/swarupdonepudi/gitr/releases/download/v#{version}/gitr_#{version}_linux_amd64.tar.gz"
-      sha256 "198811e7c04a41ae5a885c0a579b0b8e87f5ea3cab6f69e8dcdf85f9f2eddd78"
+      sha256 "915a7325530933887ba5d1c7dcef6b19b0f89c82d086c562e641ee338a24d440"
     end
     on_arm do
       url "https://github.com/swarupdonepudi/gitr/releases/download/v#{version}/gitr_#{version}_linux_arm64.tar.gz"
-      sha256 "1f88266e275e7634be0f7f5a34e639c2b9462b6c4593fb9ee78988da93667cec"
+      sha256 "78088a9a4f7892bd3b0261a28176fe833b73d4ffc055f6ed40d069270d80fa40"
     end
   end
 
