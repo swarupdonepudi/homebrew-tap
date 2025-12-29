@@ -12,4 +12,32 @@ class Karayaml < Formula
     bin.install "#{binary_name}"
     mv bin/"#{binary_name}", bin/"karayaml"
   end
+
+  def caveats
+    <<~EOS
+      Installation Complete!
+
+      karayaml lets you define Karabiner-Elements shortcuts in simple YAML.
+
+      Quick Start
+
+      1. Create your shortcuts config:
+         mkdir -p ~/.config/karayaml
+         touch ~/.config/karayaml/shortcuts.yaml
+
+      2. Define shortcuts in YAML (example):
+         # ~/.config/karayaml/shortcuts.yaml
+         shortcuts:
+           - from: caps_lock
+             to: escape
+
+      3. Generate and apply to Karabiner:
+         karayaml apply
+
+      For more commands, run:
+         karayaml --help
+
+      Documentation: https://karayaml.dev
+    EOS
+  end
 end
