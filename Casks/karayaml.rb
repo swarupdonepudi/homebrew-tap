@@ -3,7 +3,7 @@ cask "karayaml" do
   name "karayaml"
   desc "karayaml: YAML-powered shortcut launcher for Karabiner-Elements on macOS"
   homepage "https://karayaml.dev"
-  version "0.0.19"
+  version "0.0.20"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "karayaml" do
   on_macos do
     on_intel do
       url "https://github.com/swarupdonepudi/karayaml/releases/download/v#{version}/karayaml_#{version}_darwin_amd64.tar.gz"
-      sha256 "420799571777518de3be5e6d08ae499e732402a057b77ffe18896e2517a57fe7"
+      sha256 "e576c714469a02028f0536af6baa5939cf760f31989da416bb35530f81a7220e"
     end
     on_arm do
       url "https://github.com/swarupdonepudi/karayaml/releases/download/v#{version}/karayaml_#{version}_darwin_arm64.tar.gz"
-      sha256 "e80f5635babb0118b4971e7330fed2958dd461a968cfc715db50169e5a80708f"
+      sha256 "13a8d54405524a77fab785e158f3ddea76ac0fd2900b39778c6835826a063c75"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/swarupdonepudi/karayaml/releases/download/v#{version}/karayaml_#{version}_linux_amd64.tar.gz"
-      sha256 "1e97cd864ffb51febf9d79cfeccfed653b7f269078d7214b5de5a4f6a1a28d63"
+      sha256 "67c3c3c4297289857ad56b53b5499222f29d5b6e8d38a50df853dbc705f4299d"
     end
     on_arm do
       url "https://github.com/swarupdonepudi/karayaml/releases/download/v#{version}/karayaml_#{version}_linux_arm64.tar.gz"
-      sha256 "63027d372a240d3a4a19daf07dbaa00adcd0ea2e3477a34fe69d88fe9f625367"
+      sha256 "645230d9147ae4a8e1a3e251a9f6925ea475d4aa020cf2587cab5dfddb89d86a"
     end
   end
 
